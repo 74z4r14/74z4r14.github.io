@@ -12,6 +12,7 @@
         <script>
             sha1("password");
             var a = sha1.create();
+            a.update("password")
             console.log(a.hex());
         </script>
     </body>
