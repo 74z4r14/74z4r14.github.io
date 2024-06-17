@@ -10,12 +10,16 @@
         <input type="text" id="user" name="user"><br>
         <label for="pass">Password</label><br>
         <input type="text" id="pass" name="pass"><br>
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" onclick="checkPass()">
 
 
 
 
         <script>
+            function checkPass() {
+                let user = document.getElementById("user").value;
+                console.log(user)
+            }
             console.log(sha1("testing"));
         </script>
     </body>
