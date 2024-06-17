@@ -3,6 +3,12 @@
     <head>
         <title>74z4r14's Test Page</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            let c = document.cookie
+            if (c.search("ctest=hello") >= 0) {
+                window.location = "index.html"
+            }
+        </script>
     </head>
     <body>
         <h1>Test</h1>
