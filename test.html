@@ -6,11 +6,13 @@
         <script>
             let c = document.cookie
             console.log(c)
-            //if (c.search("ctest=hello") >= 0) {
+            if (c.search("ctest=hello") >= 0) {
+                console.log("Yes")
                 //window.location = "index.html"
-            //} else {
+            } else {
+                console.log("No")
                 //document.cookie = "ctest=;"
-            //}
+            }
         </script>
     </head>
     <body>
