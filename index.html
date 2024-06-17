@@ -25,13 +25,12 @@
                     alert("Please fill in a username and password");
                 } else if (user = "admin" && sha1(pass) == "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8") {
                     console.log("Correct!");
+                    document.cookie = "ctest = hello";
                     window.location = "test.html"
                 } else {
                     console.log("False");
                 }
             }
-            document.cookie = "ctest = hello";
-            console.log(document.cookie)
         </script>
     </body>
 </html>
