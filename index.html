@@ -19,7 +19,7 @@
             function checkPass() {
                 let user = document.getElementById("user").value;
                 console.log(user)
-                if (user == dc724af18fbdd4e59189f5fe768a5f8311527050) {
+                if (sha1(user) == "dc724af18fbdd4e59189f5fe768a5f8311527050") {
                     console.log("Correct!")
                 } else {
                     console.log("False")
