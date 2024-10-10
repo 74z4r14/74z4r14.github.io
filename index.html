@@ -3,7 +3,9 @@
     <head>
         <title>74z4r14's Home Page</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.7.0/sha1.js" integrity="sha512-XyCkDMj/643aCjIdbmEnxiPMLjsw2OVkR2jlzvGjlmh4uRczAvlukdWQ5KbGkjAcm4bQ2V4OgkvLsmkbyPadyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.7.0/sha1.js" integrity="sha512-XyCkDMj/643aCjIdbmEnxiPMLjsw2OVkR2jlzvGjlmh4uRczAvlukdWQ5KbGkjAcm4bQ2V4OgkvLsmkbyPadyQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+            let test = 3;
+        </script>
     </head>
     <body>
         <label for="user">Username</label><br>
@@ -22,6 +24,7 @@
                 alert("Wrong password");
             }
             document.cookie = "ctest=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
+            console.log(test);
 
             function checkPass() {
                 let user = document.getElementById("user").value;
