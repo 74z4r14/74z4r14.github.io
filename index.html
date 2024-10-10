@@ -11,19 +11,6 @@
                 }
                 c = "ctest=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
             }
-        </script>
-    </head>
-    <body onload="cookieReset()">
-        <label for="user">Username</label><br>
-        <input type="text" id="user" name="user"><br>
-        <label for="pass">Password</label><br>
-        <input type="text" id="pass" name="pass"><br>
-        <input type="submit" value="Login" onclick="checkPass()">
-
-
-
-
-        <script>
             function checkPass() {
                 let user = document.getElementById("user").value;
                 let pass = document.getElementById("pass").value;
@@ -37,5 +24,12 @@
                 }
             }
         </script>
+    </head>
+    <body onload="cookieReset()">
+        <label for="user">Username</label><br>
+        <input type="text" id="user" name="user"><br>
+        <label for="pass">Password</label><br>
+        <input type="text" id="pass" name="pass"><br>
+        <input type="submit" value="Login" onclick="checkPass()">
     </body>
 </html>
