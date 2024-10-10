@@ -23,12 +23,15 @@
                 let pass = document.getElementById("pass").value;
                 if (user == "" || pass == "") {
                     alert("Please fill in a username and password");
-                } else if (user = "admin" && sha1(pass) == "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8") {
-                    console.log("Correct!");
-                    document.cookie = "ctest=hello; path=/";
-                    window.location = "test.html"
+                //} else if (user = "admin" && sha1(pass) == "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8") {
+                    //console.log("Correct!");
+                    //document.cookie = "ctest=hello; path=/";
+                    //window.location = "test.html"
                 } else {
-                    console.log("False");
+                    console.log("Cookie being made");
+                    hash = sha1(pass);
+                    document.cookie = "ctest=" + hash + "; path=/";
+                    window.location = "test.html"
                 }
             }
         </script>
