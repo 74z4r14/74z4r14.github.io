@@ -4,13 +4,24 @@
         <title>74z4r14's Home Page</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.7.0/sha1.js" integrity="sha512-XyCkDMj/643aCjIdbmEnxiPMLjsw2OVkR2jlzvGjlmh4uRczAvlukdWQ5KbGkjAcm4bQ2V4OgkvLsmkbyPadyQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-            function cookieReset() {
-                let c = document.cookie;
-                if (c.search("ctest=wrong") >= 0) {
-                    alert("Wrong password");
-                }
-                c = "ctest=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
+            let c = document.cookie;
+            if (c.search("ctest=wrong") >= 0) {
+                alert("Wrong password");
             }
+            c = "ctest=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
+        </script>
+    </head>
+    <body>
+        <label for="user">Username</label><br>
+        <input type="text" id="user" name="user"><br>
+        <label for="pass">Password</label><br>
+        <input type="text" id="pass" name="pass"><br>
+        <input type="submit" value="Login" onclick="checkPass()">
+
+
+
+
+        <script>
             function checkPass() {
                 let user = document.getElementById("user").value;
                 let pass = document.getElementById("pass").value;
@@ -23,14 +34,6 @@
                     window.location = "test.html";
                 }
             }
-            window.onload = cookieReset;
         </script>
-    </head>
-    <body>
-        <label for="user">Username</label><br>
-        <input type="text" id="user" name="user"><br>
-        <label for="pass">Password</label><br>
-        <input type="text" id="pass" name="pass"><br>
-        <input type="submit" value="Login" onclick="checkPass()">
     </body>
 </html>
