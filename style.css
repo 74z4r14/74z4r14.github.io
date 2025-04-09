@@ -1,3 +1,14 @@
 body {
     background-image: "matrix.jpeg";
 }
+
+.container {
+    position: relative;
+    padding: 10px;
+}
+
+.left {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
