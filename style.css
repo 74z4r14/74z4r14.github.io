@@ -5,10 +5,11 @@ body {
 .container {
     position: relative;
     padding: 10px;
+    color: aquamarine;
 }
 
 .left {
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 80px;
 }
